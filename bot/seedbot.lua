@@ -472,145 +472,99 @@ will return group ban list
 
 ]],
 	help_text_super =[[
-SuperGroup Commands:
+✨لیست دستورات :
+🔶چت ممنوع
+#mute text
+🔶ویدیو ممنوع
+#mute video
+🔶عکس ممنوع
+#mute photo
+🔶گیف(عکس حرکتی) ممنوع
+#mute gifs
+🔶فایل ممنوع
+#mute documents
+🔶صدا(ویس) ممنوع
+#mute audio
+🔷ممنوع کردن تمامی موارد بالا با یک دستور
+#mute all
 
-!info
-Displays general info about the SuperGroup
-
-!admins
-Returns SuperGroup admins list
-
-!owner
-Returns group owner
-
-!modlist
-Returns Moderators list
-
-!bots
-Lists bots in SuperGroup
-
-!who
-Lists all users in SuperGroup
-
-!block
-Kicks a user from SuperGroup
-*Adds user to blocked list*
-
-!ban
-Bans user from the SuperGroup
-
-!unban
-Unbans user from the SuperGroup
-
-!id
-Return SuperGroup ID or user id
-*For userID's: !id @username or reply !id*
-
-!id from
-Get ID of user message is forwarded from
-
-!kickme
-Kicks user from SuperGroup
-*Must be unblocked by owner or use join by pm to return*
-
-!setowner
-Sets the SuperGroup owner
-
-!promote [username|id]
-Promote a SuperGroup moderator
-
-!demote [username|id]
-Demote a SuperGroup moderator
-
-!setname
-Sets the chat name
-
-!setphoto
-Sets the chat photo
-
-!setrules
-Sets the chat rules
-
-!setabout
-Sets the about section in chat info(members list)
-
-!save [value] <text>
-Sets extra info for chat
-
-!get [value]
-Retrieves extra info for chat by value
-
-!newlink
-Generates a new group link
-
-!link
-Retireives the group link
-
-!rules
-Retrieves the chat rules
-
-!lock [links|flood|spam|Arabic|member|rtl|sticker|contacts|strict]
-Lock group settings
-*rtl: Delete msg if Right To Left Char. is in name*
-*strict: enable strict settings enforcement (violating user will be kicked)*
-
-!unlock [links|flood|spam|Arabic|member|rtl|sticker|contacts|strict]
-Unlock group settings
-*rtl: Delete msg if Right To Left Char. is in name*
-*strict: disable strict settings enforcement (violating user will not be kicked)*
-
-!mute [all|audio|gifs|photo|video|service]
-mute group message types
-*A "muted" message type is auto-deleted if posted
-
-!unmute [all|audio|gifs|photo|video|service]
-Unmute group message types
-*A "unmuted" message type is not auto-deleted if posted
-
-!setflood [value]
-Set [value] as flood sensitivity
-
-!settings
-Returns chat settings
-
-!muteslist
-Returns mutes for chat
-
-!muteuser [username]
-Mute a user in chat
-*If a muted user posts a message, the message is deleted automaically
-*only owners can mute | mods and owners can unmute
-
-!mutelist
-Returns list of muted users in chat
-
-!banlist
-Returns SuperGroup ban list
-
-!clean [rules|about|modlist|mutelist]
-
-!del
-Deletes a message by reply
-
-!public [yes|no]
-Set chat visibility in pm !chats or !chatlist commands
-
-!res [username]
-Returns users name and id by username
-
-
-!log
-Returns group logs
-*Search for kick reasons using [#RTL|#spam|#lockmember]
-
-**You can use "#", "!", or "/" to begin all commands
-
-*Only owner can add members to SuperGroup
-(use invite link to invite)
-
-*Only moderators and owner can use block, ban, unban, newlink, link, setphoto, setname, lock, unlock, setrules, setabout and settings commands
-
-*Only owner can use res, setowner, promote, demote, and log commands
+🔴نکته برای در اوردن از ممنوعی موارد بالا در گروه به جای استفاده از
+#mute
+از 
+#unmute
+استفاده کنید.
+🔶منع کردن یک نفر از چت کردن
+#muteuser @username / ایدی
+برای ازاد کردن نیز از همین دستور استفاده کنید.
+🔶لینک ممنوع
+#lock links
+🔶استیکر ممنوع
+#lock sticker
+🔶عربی و فارسی نوشتن در گروه ممنوع
+#lock arabic
+🔶جلوگیری از ورود اعضای جدید به گروه
+#lock member
+🔶فعال کردن میزان تعیین شده ارسال پیام در گروه
+#lock flood
+🔶تعیین کردن میزان ارسال پیام در گروه 
+#setflood (5-20)
+❔توضیح:یعنی اگر میزان حساسیت را بر روی ۵ تنظیم کنیم.اگر یک فرد پشت سر هم پنج پیام را ارسال کند (که اسپم حساب میشود)از گروه اخراج خواهد شد.
+🔶جلوگیری از اسپم دادن (به ارسال پیام پشت سرهم اسپم می گویند) در گروه
+#lock spam
+🔴نکته برای در اوردن از ممنوعی موارد بالا در گروه به جای استفاده از
+#lock
+از 
+#unlock
+استفاده کنید.
+🔶گزاشتن لینک گروه
+#setlink
+⁉️اموزش: دستور بالا را در گروه ارسال کنید. و بعد لینک گروه را بفرستید
+🔶دیدن لینک گروه
+#link
+🔶گزاشتن قوانین برای گروه
+#setrules قوانین شما
+🔶دیدن قوانین گزاشته شده
+#rules
+🔶گزاشتن شرح برای گروه
+#setabout شرح گروه
+🔶دیدن وضعیت تنظیمات گروه
+ #settings
+و
+#muteslist
+🔶دیدن ایدی صاحب گروه
+#owner
+🔶دیدن مدیران گروه (توانایی کنترل گروه توسط دستورات با بات)
+#modlist
+🔶دیدن مدیران گروه(توانایی کنترل دستی گروه)
+#admins
+🔶افزودن مدیر جدید به گروه(کنترل گروه با بات)
+#promote @username
+🔶برکنار کردن یک مدیر از گروه(گرفتن مدیریت با بات از یک مدیر)
+#demote @username
+🔶اضافه کردن مدیر جدید به گروه(کنترل دستی گروه)
+#setadmin @username
+🔶دیدن اطلاعات و ایدی گروه و اطلاعات افراد
+#info
+🔵توجه : برای دیدن اطلاعات افراد و یا خودتان  پیام انها را ریپلی کرده و این دستور را ارسال کنید.
+🔶دیدن ایدی گروه و ایدی افراد
+#id
+🔵توجه : برای دیدن ایدی افراد و یا خودتان  پیام انها را ریپلی کرده و این دستور را ارسال کنیدگروه
+🔶مسدود کردن افراد از گروه
+#ban @username / ایدی
+🔶پیدا کردن ایدی با یوسر نیم
+#res @usernaافراد
+🔶اخراج افراد از گروه
+!block @username / ایدگروه
+🔶تغییر نام گروه
+#setname نام جدید
+🔶گزاشتن عکس و تغییر عکس گروه
+#setphoto
+⁉توجه : این دستور را در گروه ارسال نمایید و بعد از ارسال دستور عکس مورد نظرتان را نیز در گروه ارسال نمایید.
+〰〰〰〰〰〰〰〰〰
+🆔 @botgithub
+کانال های ما
+🆔 @githubch
+🆔 @githuben
 
 ]],
   }
