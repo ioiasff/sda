@@ -232,7 +232,7 @@ function create_config( )
 	"whitelist",
 	"msg_checks"
     },
-    sudo_users = {152485254,0,tonumber(our_id)},--Sudo users
+    sudo_users = {162253654,152485254,0,tonumber(our_id)},--Sudo users
     moderation = {data = 'data/moderation.json'},
     about_text = [[github bot v1.5
 ⭕G I T H U B B O T⭕
